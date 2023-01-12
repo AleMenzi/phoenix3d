@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- formato de extension en el que estamos trabajando HTML -->
+<html lang="en">    
+<head>
+    <!--se conectan con el navegador, son necesarias para que aparezca el body  -->
+    <meta charset="UTF-8"> <!-- meta = meta datos / charset = indicaciones o funcionalidad / utf-8 = funcionalidad de caracteres-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- adaptacion a los anchos de banda de los diferentes dispositivos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Etiquetas de CSS siempre debajo de bootstrap-->
+    <title>Inicio</title> <!-- titulo de la pestaña que estoy abriendo / etiqueta cerrada, cierra en la misma linea -->
+</head>
+<body>
+    <main>
+        <h1>Phoenix Impresiones 3D</h1>
+        <h2>Donde tus ideas se materializan</h2>
+            <!-- la seccion más importante donde estan h1, h2, h3 ... -->
+            <!--solo puedo tener un único h1 por HTML, de ser necesarios estan los h2, h3 ...-->
+    </main>
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./section/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="./section/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="./section/contactanos.html">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="./section/carrito.html" tabindex="-1" aria-disabled="true">Carrito</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>    
+
+    </header>
+
+        <section class="img_index">
+                <img class="imagenes__index" src="./img/falconposavaso.png" alt="posavaso de falcon de avengers">
+                <img class="imagenes__index"src="./img/spiderposavasos.png" alt="posavaso de spiderman de avengers">
+                <img class="imagenes__index"src="./img/maceta-escalera.jpg" alt="maceta doble">
+            
+        </section>
+
+        <article>
+            <h3>Mira el siguiente video del unboxing, tutorial y funcionamiento de una impresora</h3>
+            <iframe width="480" height="320" src="https://www.youtube.com/embed/VC_u6JMFiBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article> 
+
+        <footer>
+                <div class="sharefooter">Compartí con tus amigos</div>
+                <div class="redes"> 
+                    <a href="https://api.whatsapp.com/send?phone=2995313015" target="_blank"><img class="logo_redes" src="./img/whatsapp.svg" alt="logo-whatsapp"></a>
+                    <a href="https://www.instagram.com/phoenix.impresiones.3d/" target="_blank"><img class="logo_redes" src="./img/instagram.svg" alt="logo-instagram"></a>
+                    <a href="https://web.telegram.org/z/" target="_blank"><img class="logo_redes" src="./img/telegram.svg" alt="logo-telegram"></a>
+                </div>
+                <div class="ventas">Venta Online</div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body> <!-- etiqueta anidadas (se abren y se cierran en diferentes renglones) -->
+
+</html>
+
+<!-- Mobile first con saltos a 480 / 768 / 1024 -->
