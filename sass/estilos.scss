@@ -1,10 +1,11 @@
+@import "generales";
+@import "carrito";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital@0;1&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
-
 header{
     background-color: rgb(1, 107, 188);
     background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
@@ -19,95 +20,6 @@ header{
     padding-left: 20px;
 }
 
-body{
-    background: rgb(164,181,252);
-    background: linear-gradient(90deg, rgba(164,181,252,1) 0%, rgba(151,200,245,1) 50%, rgba(138,238,255,1) 95%);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-height: 80vh;
-}
-
-h1{
-    font-family:'Poppins';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    text-align: center;
-    line-height: 35px;
-    letter-spacing: 2px;
-    color:rgb(1, 107, 188);
-    background-color:black;
-    padding: 20px;
-    color: rgb(1, 107, 188);
-    text-shadow: 1px 1px 2px azure, 0 0 25px blue, 0 0 5px darkblue;
-
-}
-h2{
-    font-family:'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    line-height: 35px;
-    letter-spacing: 2px;
-    color:black;
-    background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
-    padding: 20px;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-decoration: none;
-    text-align: center;
-}
-
-footer{
-    background-color:rgb(1, 107, 188);
-    background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
-    height: 230px;
-    padding: 3em;
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.sharefooter, .ventas{
-    font-size: 18px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.foot{
-    font-style: normal;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    width: 104%;
-    padding: 2em;
-    margin: 1em;
-}
-
-.redes{
-    height: 100%;
-    width: 2em;
-    margin-left: 1em;
-    padding-top: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
-
-.logo_redes{
-    height: 50px;
-    width: 50px;
-}
-
 .img_index{
     display: flex;
     flex-direction: column;
@@ -119,8 +31,6 @@ footer{
     margin-bottom: 20px;
     padding: 20px;
     gap: 40px;
-
-
 }
 
 .imagenes__index{
@@ -182,19 +92,6 @@ iframe{
     margin-left: 10%;
 }
 
-.logo{
-    margin: 20px;
-    height: 15em;
-    width: 15em;
-}
-
-.primer-parrafo{
-    text-shadow: 0 0 3px  rgba(79,111,238,1), 0 0 5px rgba(69,226,252,1);
-    font-size: 2em;
-    font-style: italic;
-    font-weight: bold;
-}
-
 .container_fluid_formulario{
     width: 90%;
     height: 10%;
@@ -206,7 +103,6 @@ iframe{
     border: 1px none;
     border-radius: 15px;
 }
-
 
 .title_form{
     font-family:'Roboto';
@@ -226,51 +122,72 @@ iframe{
     margin: 3%;
 }
 
-.contenedor__carrito{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.box_carrito{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.img__carrito{
-    display: flex;
-    flex-direction: column;
-    height: 40%;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10%;
-    padding: 10px;
-    border: 3px none;
-    border-radius: 30px;
-}
-
-.txt__carrito{
-    font-size: 18px;
-    font-family: "roboto";
+.primer-parrafo{
+    text-shadow: 0 0 3px  rgba(79,111,238,1), 0 0 5px rgba(69,226,252,1);
+    font-size: 2em;
     font-style: italic;
-    text-align:center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 24%;
+    font-weight: bold;
+}
+
+.ai_box, .bi_box, .ci_box{
+    width: 90%;
+}
+
+.ai, .bi, .ci{
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+}
+.a, .b, .c{
+    background-color:rgb(1, 107, 188);
+    background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
+    margin: 10px 20px;
     display: flex;
-    flex-direction: column;
-    height: 30%;
-    width: 80%;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 10%;
-    padding: 20px;
-    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.a, .b, .c, .ai, .bi, .ci{
+    gap: 10px;
+    border: 18px;
+    border-radius: 18px;
+}
+
+.grid-nosotros{
+    grid-area: grid-nosotros;
+}
+
+.ai{
+    grid-area: ai;
+}
+.bi{
+    grid-area: bi;
+}
+.ci{
+    grid-area: ci;
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+
+.grid-nosotros{
+    background: rgb(79,111,238);
+    background: linear-gradient(90deg, rgba(79,111,238,1) 0%, rgba(100,175,242,1) 50%, rgba(69,226,252,1) 100%);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-items: center;
 }
 
 @media (min-width: 480px){
@@ -298,9 +215,6 @@ iframe{
     .iframe{
         width: 70%;
     }
-    h3{
-        font-size: 23px;
-    }
     .sharefooter, .ventas{
         font-size: 18px;
         font-style: italic;
@@ -320,31 +234,45 @@ iframe{
         width: 70%;
         height: 70%;
     }
-    .logo:hover{    
-        transform: scale(1.2);
-        transition-property: all;
-        transition-duration:3s;
-    }
+
     .primer-parrafo{
         font-size: 2em;
         font-style: italic;
         font-weight: bold;
     }
-    .box_carrito{
-        margin-top: 30px;
-        margin-left: 20%;
-        gap: 40px;
-
+    .box__carrito{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
     .img__carrito{
-        width: 80%;
-        height: 60%;
-        max-width: 500px;
-        max-height: 500px;
+        width: 30%;
+        margin-left: 10px;
     }
     .txt__carrito{
-        max-width: 500px;
-        max-height: 100px;
+        width: 40%;
+        height: 120px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .a, .b, .c{
+        height: 15em;
+
+    }
+    .ai, .bi, .ci{
+        width: 150px;
+        height: 150px;
+    }
+    .grid-nosotros{
+        display: grid;
+        grid-template-areas:
+        "ai a a"
+        "b b bi"
+        "ci c c";
     }
 
 }
@@ -391,10 +319,34 @@ iframe{
         margin-bottom: 32%;
     }
     .box__carrito{
-        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .img__carrito{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .txt__carrito{
+        width: 40%;
+        height: 120px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
     }
     .title_prod{
         font-size: 30px;
+    }
+    .ai, .bi, .ci{
+        width: 180px;
+        height: 180px;
+    }
+    .a, .b, .c{
+        height: 13em;
+        font-size: 20px;
     }
 
 }
@@ -454,4 +406,8 @@ iframe{
     .title_prod{
         font-size: 35px;
     }
+    .a, .b, .c{
+        height: 10em;
+    }
+
 }
