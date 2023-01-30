@@ -82,7 +82,7 @@ footer .redes {
   flex-direction: row;
   justify-content: center;
 }
-footer .logo_redes {
+footer footer, footer .logo_redes {
   width: 50px;
   height: 50px;
 }
@@ -352,7 +352,7 @@ iframe {
     transition-property: all;
     transition-duration: 2s;
   }
-  .logo_redes {
+  footer .logo_redes {
     width: 55px;
     height: 55px;
   }
@@ -431,7 +431,7 @@ iframe {
     transition-property: all;
     transition-duration: 3s;
   }
-  .logo_redes {
+  footer .logo_redes {
     width: 60px;
     height: 60px;
   }
@@ -551,7 +551,7 @@ iframe {
   .a, .b, .c {
     height: 10em;
   }
-  .logo_redes {
+  footer .logo_redes {
     width: 65px;
     height: 65px;
   }

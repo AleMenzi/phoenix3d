@@ -223,8 +223,10 @@ iframe{
         width: $width;
         height: $height;
     }
-    .logo_redes{
-        @include sizes(55px,55px);
+    footer{ 
+        .logo_redes{
+            @include sizes(55px,55px);
+        }
     }
     .iframe{
         width: 70%;
@@ -311,8 +313,10 @@ iframe{
         width: $width;
         height: $height;
     }
-    .logo_redes{
-        @include sizes(60px,60px);
+    footer{ 
+        .logo_redes{
+            @include sizes(60px,60px);
+        }
     }
     .box__prod{
         gap: 20px;
@@ -435,7 +439,9 @@ iframe{
         width: $width;
         height: $height;
     }
-    .logo_redes{
-        @include sizes(65px,65px);
+    footer{ 
+        .logo_redes{
+            @include sizes(65px,65px);
+        }
     }
 }
