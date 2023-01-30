@@ -90,6 +90,6 @@ footer{
         height: $height;
     }
     .logo_redes{
-        @include sizes(50px,50px)
+        @include sizes (50px,50px);
     }
 }
