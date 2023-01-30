@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 body h1 {
   font-family: "Poppins";
@@ -217,6 +217,10 @@ iframe {
   letter-spacing: 2px;
   color: black;
   padding: 20px;
+}
+
+.txt__prod, .txt__prod2 {
+  font-size: 20px;
 }
 
 .d-flex {
@@ -431,9 +435,6 @@ iframe {
     width: 70%;
     height: 90%;
   }
-  .txt__prod {
-    font-size: 22px;
-  }
   .title_form {
     font-family: "Roboto";
     font-style: normal;
@@ -495,7 +496,7 @@ iframe {
     gap: 50px;
     margin: 35px;
   }
-  .txt__prod {
+  .txt__prod, .txt__prod2 {
     margin-left: 0.5em;
     font-size: 25px;
   }
@@ -536,4 +537,4 @@ iframe {
   .a, .b, .c {
     height: 10em;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}

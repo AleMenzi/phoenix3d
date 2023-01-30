@@ -85,8 +85,11 @@ footer{
         flex-direction: row;
         justify-content:center;
     }
+    @mixin sizes ($width, $height){
+        width: $width;
+        height: $height;
+    }
     .logo_redes{
-        height: 50px;
-        width: 50px;
+        @include sizes(50px,50px)
     }
 }
