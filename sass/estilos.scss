@@ -36,8 +36,8 @@ header{
 .imagenes__index{
     border: 15px azure;
     border-radius: 20px;
-    height: 30%;
-    width: 90%;
+    width: 260px;
+    height: 220px;    
 }
 
 h3{
@@ -73,6 +73,8 @@ iframe{
     align-items: center;
     margin-left: 15%;
     padding: 20px;
+    border: 30px none;
+    border-radius: 35px;
 }
 
 .title_prod{
@@ -139,8 +141,8 @@ iframe{
 }
 
 .ai, .bi, .ci{
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
 }
 .a, .b, .c{
@@ -148,6 +150,7 @@ iframe{
     background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
     margin: 10px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -241,7 +244,8 @@ iframe{
         margin-top: 25px;
     }
     .box__prod{
-        margin-top: 20px;
+        max-width:720px;
+        margin: 20px auto;
     }
     .img__prod{
         border: 20px none;
@@ -277,19 +281,14 @@ iframe{
     }
     .a, .b, .c{
         height: 15em;
+        font-size:18px;
 
     }
     .ai, .bi, .ci{
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
     }
-    .grid-nosotros{
-        display: grid;
-        grid-template-areas:
-        "ai a a"
-        "b b bi"
-        "ci c c";
-    }
+
 }
 
 @media (min-width: 768px){
@@ -367,8 +366,8 @@ iframe{
         font-size: 30px;
     }
     .ai, .bi, .ci{
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
     }
     .a, .b, .c{
         height: 13em;
@@ -391,8 +390,10 @@ iframe{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 50px;
-        margin: 35px;
+    }
+    .img__prod{
+        width: 70%;
+        height: 95%;
     }
     .txt__prod{
         margin-left: 0.5em;
@@ -438,6 +439,10 @@ iframe{
     @mixin sizes ($width, $height){
         width: $width;
         height: $height;
+    }
+    .ai, .bi, .ci{
+        @include sizes(280px,280px);
+        border-radius: 40px;
     }
     footer{ 
         .logo_redes{

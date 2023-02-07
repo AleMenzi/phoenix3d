@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital@0;1&display=swap");
 * {
   margin: 0;
@@ -14,18 +14,17 @@ body {
   min-height: 80vh;
 }
 body h1 {
-  font-family: "Poppins";
+  font-family: "Bangers";
   font-style: normal;
-  font-weight: bold;
-  font-size: 38px;
+  font-weight: lighter;
+  font-size: 48px;
   text-align: center;
-  line-height: 35px;
+  line-height: 45px;
   letter-spacing: 2px;
-  color: rgb(1, 107, 188);
+  color: rgb(15, 111, 189);
   background-color: black;
   padding: 20px;
-  color: rgb(1, 107, 188);
-  text-shadow: 1px 1px 2px azure, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 0.5px 2px 3px rgb(188, 246, 246), 0 0 25px blue, 0 0 5px darkblue;
 }
 body h2 {
   font-family: "Roboto";
@@ -52,14 +51,14 @@ footer {
   background: linear-gradient(90deg, rgb(9, 89, 153) 0%, rgb(17, 138, 158) 40%, rgb(0, 255, 239) 100%);
   height: 230px;
   padding: 3em;
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 footer .sharefooter, footer .ventas {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: bold;
 }
@@ -168,8 +167,8 @@ header {
 .imagenes__index {
   border: 15px azure;
   border-radius: 20px;
-  height: 30%;
-  width: 90%;
+  width: 260px;
+  height: 220px;
 }
 
 h3 {
@@ -205,6 +204,8 @@ iframe {
   align-items: center;
   margin-left: 15%;
   padding: 20px;
+  border: 30px none;
+  border-radius: 35px;
 }
 
 .title_prod {
@@ -270,8 +271,8 @@ iframe {
 }
 
 .ai, .bi, .ci {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   padding: 10px;
 }
 
@@ -280,6 +281,7 @@ iframe {
   background: linear-gradient(90deg, rgb(9, 89, 153) 0%, rgb(17, 138, 158) 40%, rgb(0, 255, 239) 100%);
   margin: 10px 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -369,7 +371,8 @@ iframe {
     margin-top: 25px;
   }
   .box__prod {
-    margin-top: 20px;
+    max-width: 720px;
+    margin: 20px auto;
   }
   .img__prod {
     border: 20px none;
@@ -404,14 +407,11 @@ iframe {
   }
   .a, .b, .c {
     height: 15em;
+    font-size: 18px;
   }
   .ai, .bi, .ci {
-    width: 150px;
-    height: 150px;
-  }
-  .grid-nosotros {
-    display: grid;
-    grid-template-areas: "ai a a" "b b bi" "ci c c";
+    width: 220px;
+    height: 220px;
   }
 }
 @media (min-width: 768px) {
@@ -484,8 +484,8 @@ iframe {
     font-size: 30px;
   }
   .ai, .bi, .ci {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
   }
   .a, .b, .c {
     height: 13em;
@@ -507,8 +507,10 @@ iframe {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    margin: 35px;
+  }
+  .img__prod {
+    width: 70%;
+    height: 95%;
   }
   .txt__prod, .txt__prod2 {
     margin-left: 0.5em;
@@ -550,6 +552,11 @@ iframe {
   }
   .a, .b, .c {
     height: 10em;
+  }
+  .ai, .bi, .ci {
+    width: 280px;
+    height: 280px;
+    border-radius: 40px;
   }
   footer .logo_redes {
     width: 65px;
