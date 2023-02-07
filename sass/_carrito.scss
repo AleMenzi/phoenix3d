@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
     .box_carrito{
         display: flex;
         flex-direction: row;
@@ -40,4 +40,5 @@
     margin-left: 10%;
     padding: 20px;
     gap: 30px;
+    box-shadow: 8px 4px 1px black;
 }

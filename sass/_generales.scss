@@ -16,27 +16,28 @@ body{
     font-family:'Bangers';
     font-style: normal;
     font-weight: lighter;
-    font-size: 48px;
+    font-size: 65px;
     text-align: center;
-    line-height: 45px;
-    letter-spacing: 2px;
+    line-height: 60px;
+    letter-spacing: 3px;
     color:rgb(15, 111, 189);
     background-color:black;
-    padding: 20px;
+    padding: 35px;
     text-shadow: .5px 2px 3px rgb(188, 246, 246), 0 0 25px blue, 0 0 5px darkblue;
     }
 
     h2{
-    font-family:'Roboto';
+    font-family:'Bangers';
     font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: lighter;
+    font-size: 35px;
     text-align: center;
     line-height: 35px;
     letter-spacing: 2px;
     color:black;
     background: linear-gradient(90deg, rgba(9,89,153,1) 0%, rgba(17,138,158,1) 40%, rgba(0,255,239,1) 100%);
     padding: 20px;
+    text-shadow: white 0.1em 0.1em 0.3em;
     }
 
     nav ul{
@@ -46,6 +47,10 @@ body{
     text-decoration: none;
     text-align: center;
     }
+}
+.navbar-brand{
+    font-size: 1.75rem;
+    font-weight: bolder;
 }
 
 footer{
@@ -63,6 +68,7 @@ footer{
         font-size: 18px;
         font-style: normal;
         font-weight: bold;
+        margin: 10px;
     }
     .foot{
         font-style: normal;
