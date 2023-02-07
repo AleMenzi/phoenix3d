@@ -171,6 +171,12 @@ header {
   height: 220px;
 }
 
+.imagenes__index:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
 h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -230,11 +236,11 @@ iframe {
 }
 
 .container_fluid_formulario {
-  width: 90%;
+  width: 94%;
   height: 10%;
   margin: 3%;
   margin-top: 15px;
-  padding: 2%;
+  padding: 3%;
   background: rgb(79, 111, 238);
   background: linear-gradient(90deg, rgb(79, 111, 238) 0%, rgb(100, 175, 242) 50%, rgb(69, 226, 252) 100%);
   border: 1px none;
@@ -253,7 +259,7 @@ iframe {
   background: linear-gradient(90deg, rgb(79, 111, 238) 0%, rgb(100, 175, 242) 50%, rgb(69, 226, 252) 100%);
   border: 1px none;
   border-radius: 15px;
-  width: 90%;
+  width: 94%;
   height: 10%;
   padding: 2%;
   margin: 3%;
@@ -349,11 +355,6 @@ iframe {
     width: 260px;
     height: 220px;
   }
-  .imagenes__index:hover {
-    transform: scale(1.15);
-    transition-property: all;
-    transition-duration: 2s;
-  }
   footer .logo_redes {
     width: 55px;
     height: 55px;
@@ -427,7 +428,7 @@ iframe {
     height: 195px;
   }
   .imagenes__index:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     transition-property: all;
     transition-duration: 3s;
   }
@@ -498,7 +499,7 @@ iframe {
     height: 255px;
   }
   .imagenes__index:hover {
-    transform: rotate(30deg);
+    transform: scale(1.2);
     transition-property: all;
     transition-duration: 3s;
   }

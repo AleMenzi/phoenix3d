@@ -39,6 +39,11 @@ header{
     width: 260px;
     height: 220px;    
 }
+.imagenes__index:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 2s;
+}
 
 h3{
     font-family:'Roboto';
@@ -100,11 +105,11 @@ iframe{
 }
 
 .container_fluid_formulario{
-    width: 90%;
+    width: 94%;
     height: 10%;
     margin: 3%;
     margin-top: 15px;
-    padding: 2%;
+    padding: 3%;
     background: rgb(79,111,238);
     background: linear-gradient(90deg, rgba(79,111,238,1) 0%, rgba(100,175,242,1) 50%, rgba(69,226,252,1) 100%);
     border: 1px none;
@@ -123,7 +128,7 @@ iframe{
     background: linear-gradient(90deg, rgba(79,111,238,1) 0%, rgba(100,175,242,1) 50%, rgba(69,226,252,1) 100%);
     border: 1px none;
     border-radius: 15px;
-    width: 90%;
+    width: 94%;
     height: 10%;
     padding:2%;
     margin: 3%;
@@ -217,11 +222,7 @@ iframe{
         height: 220px;    
     }
 
-    .imagenes__index:hover{
-        transform: scale(1.15);
-        transition-property: all;
-        transition-duration: 2s;
-    }
+
     @mixin sizes ($width, $height){
         width: $width;
         height: $height;
@@ -304,7 +305,7 @@ iframe{
         height: 195px;
     }
     .imagenes__index:hover{
-        transform: scale(1.2);
+        transform: scale(1.15);
         transition-property: all;
         transition-duration:3s;
     }
@@ -376,14 +377,15 @@ iframe{
 
 }
 @media(min-width: 1024px){
+    
     .imagenes__index{
         width: 255px;
         height: 255px;
     }
     .imagenes__index:hover{
-        transform: rotate(30deg);
+        transform: scale(1.2);
         transition-property: all;
-        transition-duration:3s;
+        transition-duration: 3s;
     }
     .contenedor__prod{
         display: flex;
