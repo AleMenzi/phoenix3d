@@ -11,7 +11,12 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 80vh;
+  min-height: 150vh;
+  margin-bottom: 20px;
+}
+body ::-webkit-scrollbar {
+  width: 8px;
+  height: 15px;
 }
 body h1 {
   font-family: "Bangers";
@@ -57,7 +62,8 @@ footer {
   background: linear-gradient(90deg, rgb(9, 89, 153) 0%, rgb(17, 138, 158) 40%, rgb(0, 255, 239) 100%);
   height: 230px;
   padding: 3em;
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom: -18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -97,12 +103,12 @@ footer footer, footer .logo_redes {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 25px;
-  margin-top: 40px;
+  gap: 15px;
+  margin-top: 30px;
 }
 .contenedor__carrito .box_carrito {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -124,8 +130,6 @@ footer footer, footer .logo_redes {
   font-family: "roboto";
   font-style: italic;
   text-align: center;
-  border: 3px solid black;
-  border-radius: 10px;
   margin-top: 5px;
   margin-left: 24%;
   display: flex;
@@ -137,7 +141,6 @@ footer footer, footer .logo_redes {
   margin-left: 10%;
   padding: 20px;
   gap: 30px;
-  box-shadow: 8px 4px 1px black;
 }
 
 * {
@@ -208,6 +211,7 @@ iframe {
   margin-top: 5vh;
   border: 5px none;
   border-radius: 25px;
+  max-width: 550px;
 }
 
 .img__prod {
@@ -237,6 +241,14 @@ iframe {
 
 .txt__prod, .txt__prod2 {
   font-size: 20px;
+}
+
+.addCart_prod {
+  background-color: rgb(1, 107, 188);
+  background: linear-gradient(90deg, rgb(9, 89, 153) 0%, rgb(17, 138, 158) 40%, rgb(0, 255, 239) 100%);
+  padding: 10px;
+  margin: 15px;
+  font-weight: bolder;
 }
 
 .d-flex {
@@ -489,17 +501,18 @@ iframe {
   }
   .contenedor__prod {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
   .img__prod {
     width: 70%;
-    height: 95%;
+    height: 3%;
+    max-width: 504px;
+    max-height: 504px;
   }
   .txt__prod, .txt__prod2 {
     margin-left: 0.5em;
-    font-size: 25px;
   }
   .title_form {
     font-family: "Roboto";
@@ -522,12 +535,12 @@ iframe {
     gap: 30px;
   }
   .img__carrito {
-    width: 30%;
+    width: 28%;
     margin-left: 10px;
   }
   .txt__carrito {
-    width: 400px;
-    height: 120px;
+    width: 600px;
+    height: 150px;
     margin-right: 20px;
     display: flex;
     justify-content: center;
