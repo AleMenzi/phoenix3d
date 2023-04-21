@@ -18,8 +18,9 @@ function cargarCarrito(){
         divTitleCar.className = "txt__carrito"
         divCar.appendChild(imgCar)
         divCar.appendChild(divTitleCar)
-        
     })
 }
 
 cargarCarrito();
+
+
